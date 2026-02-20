@@ -1,9 +1,4 @@
-# Ignore everything
-**
-
-# Except
-!src/**
-!.python-version
-!pyproject.toml
-!README.md
-!uv.lock
+.venv
+.idea
+__pycache__
+.env*

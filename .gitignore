@@ -1,19 +1,4 @@
-# Ignore everything
-**
-
-# Except
-!src/**
-!.dockerignore
-!.python-version
-!pyproject.toml
-!README.md
-!uv.lock
-
-!docker
-!docker/**
-
-!envs/**
-!envs
-
-!Makefile
-!.gitignore
+.venv
+.idea
+__pycache__
+.env*
