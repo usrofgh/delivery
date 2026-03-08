@@ -1,0 +1,11 @@
+from enum import StrEnum
+
+
+class OrderStatus(StrEnum):
+    PENDING = "PENDING"
+    CONFIRMED = "CONFIRMED"
+    PREPARING = "PREPARING"
+    READY = "READY"
+    DELIVERING = "DELIVERING"
+    DELIVERED = "DELIVERED"
+    CANCELLED = "CANCELLED"

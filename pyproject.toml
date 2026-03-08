@@ -7,8 +7,18 @@ requires-python = ">=3.13"
 dependencies = [
     "alembic>=1.18.4",
     "asyncpg>=0.31.0",
+    "celery>=5.6.2",
     "dishka>=1.8.0",
+    "fastapi>=0.129.0",
+    "flower>=2.0.1",
+    "gunicorn>=25.1.0",
+    "pwdlib[argon2]>=0.3.0",
     "pydantic-settings>=2.13.1",
+    "pydantic[email]>=2.12.5",
+    "redis>=7.2.1",
+    "ruff>=0.15.4",
     "sqlalchemy[asyncio]>=2.0.46",
     "structlog>=25.5.0",
+    "ty>=0.0.19",
+    "uvicorn==0.35.0",
 ]
