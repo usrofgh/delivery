@@ -1,8 +1,6 @@
 from dataclasses import field, dataclass
 from datetime import datetime, UTC
-from uuid import uuid4
-
-from domain.value_objects.common import UUID
+from uuid import uuid4, UUID
 
 
 @dataclass(slots=True, kw_only=True)

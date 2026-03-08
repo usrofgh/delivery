@@ -1,4 +1,26 @@
 services:
   db:
     ports:
-      - ${POSTGRES_PORT}:5432
+      - "5433:5432"
+
+  broker:
+    ports:
+      - "5673:5672"
+      - "15673:15672"
+
+
+  celery:
+    env_file:
+      - ../envs/.env.local
+
+  flower:
+    env_file:
+      - ../envs/.env.local
+    ports:
+      - "5556:5555"
+
+  app:
+    env_file:
+      - ../envs/.env.local
+    ports:
+      - "8001:8000"
